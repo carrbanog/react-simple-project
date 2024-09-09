@@ -1,0 +1,54 @@
+export default function Accordian(){
+  const [selected, setSelected] = useState(null);
+
+  function handleSingleSelection(){
+    console.log("hello");
+  }
+  return(
+
+  )
+}
+이 코드는 로컬함수
+
+function handleSingleSelection(){
+    console.log("hello");
+}
+
+export default function Accordian(){
+  const [selected, setSelected] = useState(null);
+  return(
+
+  )
+}
+이 코드는 전역함수
+
+ <div onClick={() => handleSingleSelection(dataItem.id)} className="title">
+ 이 코드는 함수에 인수(dataItem.id)를 전달할때 사용
+
+ <div onClick={handleSingleSelection} className="title">
+ 이 코드는 인수를 전달하지않고 함수를 실행시킬때만 사용
+
+<div onClick={handleSingleSelection(dataItem.id)}>
+이 코드는 함수를 바로 호출하는 구문으로 렌더링될 때 onClick이랑 상관없이 함수가 즉시 실행
+handleSingleSelection() 뒤에 괄호가 붙으면 함수가 바로 실행되기 때문
+handleSingleSelection 이렇게 지정하면 참조만 함
+
+
+props 변경되면 다시 렌더링
+const [selected, setSelected] = useState(null);
+상태도 변경되면 다시 렌더링 실제dom에서는 상태 변화로인해 화면에 변화가 필요한 부분만 업데이트
+
+
+  function handleMultiSelection(getCurrentId) {
+    let cpyMultiple = [...multiple];
+    const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
+    console.log(findIndexOfCurrentId);
+    if (findIndexOfCurrentId === -1) {
+      cpyMultiple.push(getCurrentId);
+    } else {
+      console.log(findIndexOfCurrentId);
+      cpyMultiple.splice(findIndexOfCurrentId, 1);
+    }
+    setMultiple(cpyMultiple);
+  }
+cpyMultiple.indexOf(getCurrentId); cpyMultiple에 getCurrentId를 찾는 함수 없으면 -1 반환
