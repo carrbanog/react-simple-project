@@ -51,7 +51,6 @@ function Accordian() {
                 multiple.indexOf(dataItem.id) !== -1 && (
                   <div className="content">
                     {dataItem.answer}
-                    {console.log(multiple.indexOf(dataItem.id))}
                   </div>
                   
                 )

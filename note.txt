@@ -52,3 +52,7 @@ const [selected, setSelected] = useState(null);
     setMultiple(cpyMultiple);
   }
 cpyMultiple.indexOf(getCurrentId); cpyMultiple에 getCurrentId를 찾는 함수 없으면 -1 반환
+
+indexOf()함수는 배열순환 함수 배열을 순차적으로 탐색하여 특정 배열이 존재하는지 확인하고 그 값이 처음으로 등장하는 인덱스 반환
+아이디가 1, 2, 3을 누르면 1을 렌더링 한 다음 2가 추가로 렌더링 되는게 아닌 1, 2를 새로 추가함
+배열은 렌더링해도 변경 x
