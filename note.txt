@@ -1,3 +1,5 @@
+1 Accordian
+
 export default function Accordian(){
   const [selected, setSelected] = useState(null);
 
@@ -56,3 +58,19 @@ cpyMultiple.indexOf(getCurrentId); cpyMultiple에 getCurrentId를 찾는 함수 
 indexOf()함수는 배열순환 함수 배열을 순차적으로 탐색하여 특정 배열이 존재하는지 확인하고 그 값이 처음으로 등장하는 인덱스 반환
 아이디가 1, 2, 3을 누르면 1을 렌더링 한 다음 2가 추가로 렌더링 되는게 아닌 1, 2를 새로 추가함
 배열은 렌더링해도 변경 x
+
+
+3 starRating
+
+console.log([Array(noOfStars)])
+길이가 10인 배열을 생성 내부에 빈상태로 존재
+console.log(...[Array(noOfStars)])
+길이가 10인 배열을 생성 내부에 undefiend가 10개 존재
+
+4 imageSlider
+비동기 함수는 비동기 작업을 처리하기 위한 함수로, 시간이 오래 걸리는 작업(예: 파일 읽기/쓰기, 네트워크 요청, 데이터베이스 작업 등)을 **블로킹(blocking)**하지 않고 **비동기적(asynchronous)**으로 처리할 수 있게 해줍니다. 자바스크립트에서는 async 키워드를 사용하여 비동기 함수를 정의합니다.
+
+try 블록은 에러가 발생할 가능성이 있는 코드를 안전하게 실행합니다. 코드가 에러 없이 성공하면 try 블록 내부의 코드를 모두 실행하고, 만약 에러가 발생하면 실행을 중단하고 catch 블록으로 넘어갑니다.
+
+const response = await fetch(`${getUrl}?page=${page}&limit=${limit}`);
+**fetch**는 URL에서 데이터를 가져오는 비동기 함수입니다. await를 사용하여 데이터를 가져올 때까지 기다립니다.
