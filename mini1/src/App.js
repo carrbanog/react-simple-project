@@ -1,4 +1,5 @@
-import Accordian from "./components/accordian";
+import RandomColor from "./components/2 random color";
+import Accordian from "./components/1 accordian";
 
 
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* Accordian component */}
-      <Accordian />
+      <RandomColor />
     </div>
   );
 }
