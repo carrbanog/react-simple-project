@@ -74,3 +74,7 @@ try 블록은 에러가 발생할 가능성이 있는 코드를 안전하게 실
 
 const response = await fetch(`${getUrl}?page=${page}&limit=${limit}`);
 **fetch**는 URL에서 데이터를 가져오는 비동기 함수입니다. await를 사용하여 데이터를 가져올 때까지 기다립니다.
+
+54번째 줄 currentSlide === imageItem.id
+만약 배열의 순서를 기반으로 하는 논리면 currentSlide === index가 더 적합하다.
+여기서는 imageItem.id가 문자열이라서 동작 x
