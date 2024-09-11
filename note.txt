@@ -78,3 +78,6 @@ const response = await fetch(`${getUrl}?page=${page}&limit=${limit}`);
 54번째 줄 currentSlide === imageItem.id
 만약 배열의 순서를 기반으로 하는 논리면 currentSlide === index가 더 적합하다.
 여기서는 imageItem.id가 문자열이라서 동작 x
+
+5. load-more-dataItem
+
