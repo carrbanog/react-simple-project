@@ -1,0 +1,29 @@
+.menu-bar {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  margin: 0 15px;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+
+.menu-item a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}

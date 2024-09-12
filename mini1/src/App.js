@@ -2,8 +2,12 @@
 // import Accordian from "./components/1 accordian";
 // import StarRating from "./components/3 star rating";
 // import ImageSlider from "./components/4 image slider";
+// import LoadMoreData from "./components/5 load-more-btn";
 
-import LoadMoreData from "./components/5 load-more-btn";
+import TreeView from "./components/6 menu ui";
+import menus from "./components/6 menu ui/data";
+import MenuBar from "./components/7dd";
+
 
 function App() {
   return (
@@ -13,8 +17,8 @@ function App() {
         page={"1"}
         limit={"10"}
       /> */}
-
-      <LoadMoreData />
+      <TreeView menus={menus} />    
+      {/* <MenuBar /> */}
     </div>
   );
 }
